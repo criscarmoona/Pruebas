@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="IsEnabled" />
+    <RootPropertyPathName Name="Layout" />
+    <RootPropertyPathName Name="InvertLayoutCommand" />
+    <RootPropertyPathName Name="IsShiftLock" />
+    <RootPropertyPathName Name="KeyPressedCommand" />
+    <RootPropertyPathName Name="KB" />
+    <RootPropertyPathName Name="KeyVK_OemQuestion" />
+    <RootPropertyPathName Name="Text" />
+    <RootPropertyPathName Name="Content" />
+    <RootPropertyPathName Name="KeyVK_OemPeriod" />
+    <RootPropertyPathName Name="KeyVK_OemComma" />
+    <RootPropertyPathName Name="KeyVK_M" />
+    <RootPropertyPathName Name="KeyVK_N" />
+    <RootPropertyPathName Name="KeyVK_B" />
+    <RootPropertyPathName Name="KeyVK_V" />
+    <RootPropertyPathName Name="KeyVK_C" />
+    <RootPropertyPathName Name="KeyVK_X" />
+    <RootPropertyPathName Name="KeyVK_Z" />
+    <RootPropertyPathName Name="ShiftCommand" />
+    <RootPropertyPathName Name="EnterKey" />
+    <RootPropertyPathName Name="KeyVK_Oem7" />
+    <RootPropertyPathName Name="KeyVK_Oem1" />
+    <RootPropertyPathName Name="KeyVK_L" />
+    <RootPropertyPathName Name="KeyVK_K" />
+    <RootPropertyPathName Name="KeyVK_J" />
+    <RootPropertyPathName Name="KeyVK_H" />
+    <RootPropertyPathName Name="KeyVK_G" />
+    <RootPropertyPathName Name="KeyVK_F" />
+    <RootPropertyPathName Name="KeyVK_D" />
+    <RootPropertyPathName Name="KeyVK_S" />
+    <RootPropertyPathName Name="KeyVK_A" />
+    <RootPropertyPathName Name="CapsLockCommand" />
+    <RootPropertyPathName Name="IsCapsLock" />
+    <RootPropertyPathName Name="KeyVK_Oem5" />
+    <RootPropertyPathName Name="KeyVK_Oem6" />
+    <RootPropertyPathName Name="KeyVK_OemOpenBrackets" />
+    <RootPropertyPathName Name="KeyVK_P" />
+    <RootPropertyPathName Name="KeyVK_O" />
+    <RootPropertyPathName Name="KeyVK_I" />
+    <RootPropertyPathName Name="KeyVK_U" />
+    <RootPropertyPathName Name="KeyVK_Y" />
+    <RootPropertyPathName Name="KeyVK_T" />
+    <RootPropertyPathName Name="KeyVK_R" />
+    <RootPropertyPathName Name="KeyVK_E" />
+    <RootPropertyPathName Name="KeyVK_W" />
+    <RootPropertyPathName Name="KeyVK_Q" />
+    <RootPropertyPathName Name="TabKey" />
+    <RootPropertyPathName Name="BackspaceCommand" />
+    <RootPropertyPathName Name="KeyVK_OemPlus" />
+    <RootPropertyPathName Name="KeyVK_OemMinus" />
+    <RootPropertyPathName Name="KeyVK_0" />
+    <RootPropertyPathName Name="KeyVK_9" />
+    <RootPropertyPathName Name="KeyVK_8" />
+    <RootPropertyPathName Name="KeyVK_7" />
+    <RootPropertyPathName Name="KeyVK_6" />
+    <RootPropertyPathName Name="KeyVK_5" />
+    <RootPropertyPathName Name="KeyVK_4" />
+    <RootPropertyPathName Name="KeyVK_3" />
+    <RootPropertyPathName Name="KeyVK_2" />
+    <RootPropertyPathName Name="KeyVK_1" />
+    <RootPropertyPathName Name="KeyVK_Oem3" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Resources" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="TecladoUWP.BoolToSolidBrushConverter" />
+    <RootType FullName="TecladoUWP.BoolToVisibilityConverter" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Resources" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="Children" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="IsEnabled" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Command" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="CommandParameter" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontWeight" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.FrameworkElement">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="IsTabStop" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Converter" />
+      <RootProperty Name="ConverterParameter" />
+      <RootProperty Name="Path" />
+      <RootProperty Name="RelativeSource" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Data.RelativeSource" />
+    <RootType FullName="TecladoUWP.OnScreenKeyBoard" />
+  </Roots.RootTypes>
+</Roots>

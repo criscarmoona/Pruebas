@@ -5,4 +5,10 @@
     xmlns:local="using:Pruebas"
     RequestedTheme="Light">
 
+    <Application.Resources>
+        <ResourceDictionary>
+            <vm:ViewModelLocator x:Key="Locator" xmlns:vm="using:Pruebas" />
+        </ResourceDictionary>
+    </Application.Resources>
+    
 </Application>

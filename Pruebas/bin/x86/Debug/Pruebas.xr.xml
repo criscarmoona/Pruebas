@@ -1,16 +1,95 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="MainViewModel" />
+    <RootPropertyPathName Name="DatosGPastel" />
+  </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
       <RootProperty Name="RequestedTheme" />
+      <RootProperty Name="Resources" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.ResourceDictionary" />
+    <RootType FullName="Pruebas.ViewModelLocator" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="Resources" />
       <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Source" />
+      <RootProperty Name="Path" />
+      <RootProperty Name="ElementName" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Telerik.UI.Xaml.Controls.Chart.ChartPalette">
+      <RootProperty Name="FillEntries" />
+      <RootProperty Name="StrokeEntries" />
+    </RootType>
+    <RootType FullName="Pruebas.PieLabelStrategy">
+      <RootProperty Name="Binding" />
+    </RootType>
+    <RootType FullName="Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding">
+      <RootProperty Name="PropertyName" />
+    </RootType>
+    <RootType FullName="Telerik.UI.Xaml.Controls.Chart.PaletteEntryCollection">
+      <RootProperty Name="Brushes" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
+      <RootProperty Name="Color" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
+      <RootProperty Name="Children" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Telerik.UI.Xaml.Controls.Chart.RadPieChart">
+      <RootProperty Name="Palette" />
+      <RootProperty Name="Series" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.Interactivity.Interaction">
+      <RootMethod Name="GetBehaviors" />
+      <RootMethod Name="SetBehaviors" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.Interactions.Core.EventTriggerBehavior">
+      <RootProperty Name="EventName" />
+      <RootProperty Name="Actions" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.Interactions.Core.CallMethodAction">
+      <RootProperty Name="TargetObject" />
+      <RootProperty Name="MethodName" />
+    </RootType>
+    <RootType FullName="Microsoft.Toolkit.Uwp.UI.Animations.Behaviors.Blur">
+      <RootProperty Name="Value" />
+      <RootProperty Name="Duration" />
+      <RootProperty Name="Delay" />
+      <RootProperty Name="AutomaticallyStart" />
+    </RootType>
+    <RootType FullName="Telerik.UI.Xaml.Controls.Chart.PieSeries">
+      <RootProperty Name="RadiusFactor" />
+      <RootProperty Name="DisplayName" />
+      <RootProperty Name="ShowLabels" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="LabelDefinitions" />
+      <RootProperty Name="ValueBinding" />
+    </RootType>
+    <RootType FullName="Telerik.UI.Xaml.Controls.Chart.ChartSeriesLabelDefinition">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Strategy" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.Typography">
+      <RootMethod Name="GetStylisticSet1" />
+      <RootMethod Name="SetStylisticSet1" />
+    </RootType>
     <RootType FullName="Pruebas.MainPage" />
   </Roots.RootTypes>
 </Roots>

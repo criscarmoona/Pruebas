@@ -5,9 +5,107 @@
     xmlns:local="using:Pruebas"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    xmlns:telerik="using:Telerik.UI.Xaml.Controls.Chart"
+    xmlns:teclado="using:TecladoUWP"
+    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:behaviors="using:Microsoft.Toolkit.Uwp.UI.Animations.Behaviors"
+    xmlns:core="using:Microsoft.Xaml.Interactions.Core"
+    DataContext="{Binding Source={StaticResource Locator}, Path=MainViewModel}" >
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <telerik:ChartPalette x:Key="Pastel">
+            <telerik:ChartPalette.FillEntries>
+                <telerik:PaletteEntryCollection>
+                    <SolidColorBrush Color="Yellow"></SolidColorBrush>
+                    <SolidColorBrush Color="Red"></SolidColorBrush>
+                    <SolidColorBrush Color="Green"></SolidColorBrush>
+                </telerik:PaletteEntryCollection>
+            </telerik:ChartPalette.FillEntries>
+            <telerik:ChartPalette.StrokeEntries>
+                <telerik:PaletteEntryCollection>
+                    <SolidColorBrush Color="LightYellow"></SolidColorBrush>
+                    <SolidColorBrush Color="RosyBrown"></SolidColorBrush>
+                    <SolidColorBrush Color="LightGreen"></SolidColorBrush>
+                </telerik:PaletteEntryCollection>
+            </telerik:ChartPalette.StrokeEntries>
+        </telerik:ChartPalette>
+        <local:PieLabelStrategy x:Key="Strategy">
+            <local:PieLabelStrategy.Binding>
+                <telerik:PropertyNameDataPointBinding PropertyName="Etiqueta" />
+            </local:PieLabelStrategy.Binding>
+        </local:PieLabelStrategy>
+    </Page.Resources>
 
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
+
+
+        <telerik:RadPieChart x:Name="Pastel" Palette="{StaticResource Pastel}" >
+            <interactivity:Interaction.Behaviors>
+                <behaviors:Blur x:Name="BlurBehavior"
+                        Value="10"
+                        Duration="2000"
+                        Delay="0"
+                        AutomaticallyStart="False"/>
+                <behaviors:Blur x:Name="BlurBehavior1"
+                        Value="0"
+                        Duration="2000"
+                        Delay="0"
+                        AutomaticallyStart="False"/>
+            </interactivity:Interaction.Behaviors>
+            <telerik:PieSeries RadiusFactor="0.75" DisplayName="ALTAS/OK/BAJAS" ShowLabels="True"  ItemsSource="{Binding DatosGPastel}" >
+                <telerik:PieSeries.LabelDefinitions>
+                    <telerik:ChartSeriesLabelDefinition Margin="-15" Strategy="{StaticResource Strategy}" Typography.StylisticSet1="True"/>
+                </telerik:PieSeries.LabelDefinitions>
+                <telerik:PieSeries.ValueBinding>
+                    <telerik:PropertyNameDataPointBinding PropertyName="Valor"/>
+                </telerik:PieSeries.ValueBinding>
+            </telerik:PieSeries>
+        </telerik:RadPieChart>
+
+        <StackPanel HorizontalAlignment="Right"  VerticalAlignment="Bottom"  >
+            <Button Content="Apply" Margin="10">
+                <interactivity:Interaction.Behaviors>
+                    <core:EventTriggerBehavior EventName="Click">
+                        <core:CallMethodAction TargetObject="{Binding ElementName=BlurBehavior}" MethodName="StartAnimation"/>
+                    </core:EventTriggerBehavior>
+                </interactivity:Interaction.Behaviors>
+            </Button>
+            <Button Content="no" Margin="10">
+                <interactivity:Interaction.Behaviors>
+                    <core:EventTriggerBehavior EventName="Click">
+                        <core:CallMethodAction TargetObject="{Binding ElementName=BlurBehavior1}" MethodName="StartAnimation"/>
+                    </core:EventTriggerBehavior>
+                </interactivity:Interaction.Behaviors>
+            </Button>
+        </StackPanel>
+
+
+
+
+        <!--<telerik:RadPieChart x:Name="Pastel" Palette="{StaticResource Pastel}" >
+            <telerik:PieSeries RadiusFactor="0.75" DisplayName="ALTAS/OK/BAJAS" ShowLabels="True"  ItemsSource="{Binding DatosGPastel}" >
+                <telerik:PieSeries.LabelDefinitions>
+                    <telerik:ChartSeriesLabelDefinition Margin="-15" Strategy="{StaticResource Strategy}" Typography.StylisticSet1="True"/>
+                </telerik:PieSeries.LabelDefinitions>
+                <telerik:PieSeries.ValueBinding>
+                    <telerik:PropertyNameDataPointBinding PropertyName="Valor"/>
+                </telerik:PieSeries.ValueBinding>
+            </telerik:PieSeries>
+        </telerik:RadPieChart>
+
+        <Grid x:Name="NuevoPeso"
+              HorizontalAlignment="Center"
+              VerticalAlignment="Center">
+            <StackPanel>
+                <TextBlock Text="Nuevo Peso Registrado" 
+                           FontFamily="Arial"
+                           FontSize="20"/>
+            </StackPanel>
+        </Grid>-->
+        
     </Grid>
+
+    
+    
 </Page>
